@@ -1,0 +1,837 @@
+/* *********************** html styling ************************** */
+
+*{  box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    /* height: 98vw solid red; */
+    background: url(../IMAGE/img3.jpg) ;
+    background: -moz-linear-gradient(red green blue );
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+html{
+    font-size: 62.5%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    /* letter-spacing: 0.5em; */
+    /* word-spacing: 1em; */
+}
+
+
+/* ************************* utility class************************************* */
+.heading{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.text-red{
+    color: red;
+}
+.text-black{
+    color:black;
+}
+.text-white{
+    color: white;
+}
+.text-silver{
+    color: silver;
+}
+.text-gold{
+    color: gold;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    /* font-weight: 300; */
+    font-size: 200%;
+    /* text-align: center; */
+}
+.navbar2{
+    background-color: rgb(55, 55, 77);
+    /* height: 7rem; */
+}
+
+.btn{
+    color: black;
+    display: inline-block;
+    border: 1px solid rgb(22, 2, 2);
+    background-color: white;
+    border-radius: 100em;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    margin: 0.5em auto;
+    font-weight: 900;
+}
+.btn1{
+    display: inline-block;
+    color: darkred;
+    /* border: 1px solid red ; */
+    background-color: silver;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+   
+    font-weight: 900;
+    margin: 0.5em auto;
+    border-radius: 1em;
+}
+.btn1:hover{
+    color:rgb(23, 26, 20);
+    background-color: azure;
+    text-decoration: underline;
+}
+
+
+/* ################################# content styling ################################# */
+
+
+.header{
+    position: relative;
+   
+}
+.container .ul1 a:hover{
+    color: yellow;
+    border-bottom: 2px solid blue;
+}
+.logo:hover{
+    color: gold;
+    font-style: italic;
+    background-color: blueviolet;
+}
+
+.navbar .logo{
+    color: white;
+    
+}
+.navbar a{
+    color: white;
+}
+/* .navbar{
+    border: 2px solid white;
+} */
+.navbar .logo{ 
+    font-size: 3.5rem;
+    float: left;
+    margin-top: 1rem;
+    /* margin-left: 4em; */
+}
+.li1{
+    display: inline-block;   
+    margin: 0.5em;
+}
+.navbar .ul1{
+    font-size: 2.5rem;
+    float: right;
+}
+
+
+
+/* ################################## styling for ipl intro ############################### */
+
+.ipl{ text-transform: uppercase;
+    /* top: 40%;
+    left: 40%; */
+    font-size: 150%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    position: absolute;
+    /* border: 1px solid yellow; */
+    padding: 3.5em;
+    margin-right: 1em;
+    background: linear-gradient(rgb(37, 31, 31) green rgb(25, 25, 31) rgb(27, 25, 25));
+}
+.ipl a
+{
+    background-color: silver;
+    color: black;
+}
+.ipl .btn:hover{
+    font-size: 300%;
+    color: gold;
+    background-color: black;
+}
+/* .ipl .ipl1{
+    font-size: 200%;
+    text-align: center;
+}
+.ipl p{
+    text-align: center;
+    font-size: 200%;
+} */
+
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/* ################################### 2nd page ###############################  */
+
+.mangal{
+    /* background-image: url("data:image/jpeg;base64,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"); */
+    background : rgba(0, 0, 0, 0.295);
+    height: 100%;
+    width: 100%;
+    padding: 10rem 0;
+    margin-bottom: 0%;
+    
+}
+.don{
+    height: 350px;
+    background-color: rgb(49, 80, 92);
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.116);
+    /* border: 2px solid rgb(26, 24, 24); */
+}
+
+.mangal .mangal2{
+    margin-top: 5em;
+}
+
+.mangal1 .img-box{
+    width: 50%;
+    float: left;
+}
+.mangal1 .text-box{
+    width: 50%;
+    float: left;
+    background-color: rgb(50, 16, 66);
+}
+.mangal2 .img-box{
+    width: 50%;
+    float: right;
+}
+.mangal2 .text-box{
+    width: 50%;
+    float: right;
+    
+}
+.don .img-box{   
+    height: 100%;
+}
+.don .text-box{
+    /* border: 5px solid yellow ; */
+    /* height: 100%; */
+    /* padding: 4em; */
+}
+.don .img-box img{
+    background: -moz-linear-gradient(red, blue, brown, green  );
+    display: inline block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.don .text-box {
+     max-height: 60vh;
+    height: 52vh;
+    box-sizing: border-box;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+    font-size: 1.7rem ;
+    padding: 1em;
+    line-height: 1.5em;
+}
+.text-box .abt1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    padding-top:1.50em ;
+}
+.text-box .abt2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    padding-top:1.50em ;
+}
+
+.abt1:active,.abt2:hover{
+    font-size: 140%;
+    color: black;
+    background: rgb(235, 235, 173);
+    font-style: initial; 
+}
+.abt2:active,.abt1:hover{
+    font-size: 130%;
+    color: black;
+    background-color: lightblue;
+    font-style: italic; 
+}
+.mangal .don {
+    text-align: center;
+}
+.don .btn:hover{
+    background-color: burlywood;
+}
+
+.don::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+/* ############################ */
+
+/* body{
+    background-color: rgb(38, 43, 46);
+} */
+
+.box-2{ 
+    /* margin:  5rem 0; */
+   background-color:  rgba(0, 0, 0, 0.418);
+    /* border: 10px dashed black; */
+    max-height: 100%;
+    height: 90%;
+    box-sizing: border-box;
+}
+
+.b{  width: 33.33%;
+     max-height: 60vh;
+     height: 55vh;
+    /* border: dashed pink 8px; */
+    float: left;
+    /* padding: 2.5rem; */
+
+}
+.box-1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box-2 .box1 .b{
+    height: 50vh;
+    background: blanchedalmond;
+}
+.b1{
+    color: azure;
+    /* border: 5px solid green ; */
+    background-color: rgb(58, 43, 43);
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}    
+.b2{
+    /* border: 4px solid yellow ; */
+    background-color: rgb(218, 112, 112);
+    font-size: 1.5rem;
+    color: black;
+    padding: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}    
+.b3{
+    /* border: 5px solid red ; */
+    background-color: rgba(172, 207, 91, 0.568);
+    color: rgba(24, 21, 21, 0.747);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}    
+.box-2 h1,p{
+    margin-bottom: 2%;
+}
+.b1 .fa{
+    font-size: 200%;
+    color: aqua;
+    margin-bottom: 0.5em;
+}
+.b2 .fa{
+    font-size: 200%;
+    color: aqua;
+    margin-bottom: 0.5em;
+}
+.b3 .fa{
+    font-size: 200%;
+    color: aqua;
+    margin-bottom: 0.5em;
+}
+.fa:hover{
+    color: gold;
+    background-color: black;
+    font-size: 400%;
+}
+.fut{
+    background-color: rgba(34, 7, 7, 0.541);
+    color: azure;
+    font-size: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2em;
+    margin-bottom: 1%;
+}
+
+.sm .fa{
+    font-size: 200%;
+    /* background-color: rgb(231, 166, 166); */
+    margin-top: em;
+    padding: 1%;
+}
+
+.nextpage a{
+    color: yellow;
+}
+.nextpage a:hover{
+    color: black;
+    background-color: aliceblue;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+/* ###################### about styling #################### */
+
+.about .navbar{
+    color: rgba(0, 0, 255, 0.63);
+}
+.about1 .heading{
+    color: silver;
+    margin-top: 3%;
+    padding-left: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+    border-bottom: 3px solid red;
+    margin-bottom: 2%;
+}
+
+.left-right{
+    text-align: center;
+    /* border:2px solid blue; */
+    padding: 1em;
+    
+}
+.left{
+    color: rgba(255, 0, 0, 0.596);
+    float: left;
+    width: 50%;
+    
+}
+.right{
+    
+    color: rgba(63, 22, 22, 0.521);
+    float: right;
+    width: 50%;
+}
+.left-right::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.left-right li::before{
+    content: "\2713";
+    font-weight: 900;
+    color: red;
+    padding-right: 1%;
+}
+.about1 .abtp{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.329);
+}
+
+
+/* ############################### */
+
+
+.student{
+    /* border: 5px dotted rgb(18, 18, 219); */
+    margin-top: 2%;
+    text-align: center;
+    /* box-sizing: border-box; */
+}
+.student .total{
+    /* border: 1px solid black; */
+    /* padding: 2%; */
+    float: left;
+    width: 20%;
+    /* margin-left: 1px; */
+}
+.student .first{
+    float: left;
+    /* border: 1px solid yellow; */
+    /* margin-left: 1px; */
+    /* padding: 1%; */
+    
+    width: 20%; 
+}
+.student .second{
+    float: left;
+    /* margin-left: 1px; */
+    /* border: 1px solid yellow; */
+    /* padding: 1%; */
+    
+    width: 20%; 
+}
+.student::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.student .third{  
+    /* border:1px solid orange; */
+    /* padding: 1%; */
+    /* margin-left: 1px; */
+    float: right;
+    width: 20%;
+}
+.student .final{
+    float: right;
+    width: 20%;
+    /* margin-left: 1px; */
+    /* border: 1px solid rgb(37, 37, 32); */
+    /* padding: 1%; */
+}
+.student p{
+    font-size: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    word-spacing: 2%;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+
+
+/* ##########################   */
+
+.abtlast{
+    border: 2px solid yellow;
+    border-radius: 1%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border-radius: 1em;
+    margin-top: 2%;
+    background-color: rgba(255, 0, 0, 0.781);
+    /* background: linear-gradient(25deg, #d64c7f , #ee4758  50%; */
+    height: 3.5em;
+    box-shadow: 1em 1em 4em 8em (red);
+}
+.abtlast .cls{
+    /* border: 3px solid green; */
+    padding: 2%;
+    /* background-color: brown; */
+    color: white;
+
+}
+
+.abtlast .cls1{
+    float: left;
+    width: 50%;
+}
+.abtlast .cls2{
+    float: right;
+    width: 50%;
+    text-align: right;
+    /* padding-right: 5; */
+    /* margin-right: 5%; */
+}
+.abtlast::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.abtlast .cls1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+.abtlast a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.2rem;
+    color: silver;
+    border: 0.5rem solid rgb(235, 222, 222) ;
+    background-color: rgba(84, 211, 34, 0.788);
+    margin-right: 10%;
+    padding: 0.4em 3rem;
+    margin-bottom: 0.4em;
+}
+.abtlast a:hover{
+    color: rgba(11, 14, 11, 0.747);
+    background-color: rgba(255, 255, 255, 0.651);
+    font-size: 130%;
+    font-style: italic;
+    text-decoration: underline;
+}
+.abtlast a:visited{
+    color: blue;
+    background-color: rgba(240, 240, 33, 0.863);
+}
+.abtlast a:active{
+    color: gold;
+    background-color: silver;
+}
+
+
+
+
+
+/* ############################################## */
+
+
+
+.contact{
+    /* margin-top: 3rem; */
+}
+.contact-us{
+    /* border: 5px red solid ; */
+}
+.contact-us .form{
+    /* border: 2px dotted rgb(19, 168, 86); */
+    float: right;
+    width: 49%;
+}
+.contact-us .add{
+    width: 49%;
+    float: left;
+    /* border: 2px solid black; */
+}
+.contact-us::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact .add .image{
+    width: 100%;
+    /* height: 50%; */
+
+}
+.contact .add .image img{
+    /* margin-top: 2rem;s */
+    height: 15%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+
+}
+.add .cnt{
+    margin: 2rem;
+}
+.cnt .heading{ 
+    color: red;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-bottom:0.1em;
+}
+.cnt span{
+    color: rgba(15, 12, 12, 0.644);
+    font-weight:300;
+
+    margin-top: 0.1em;
+}
+.cnt span:hover{
+    color: rgb(34, 34, 30);
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(248, 211, 211);
+    font-size: 2.5rem;
+}
+.md{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+
+/* ################################# */
+
+.form .heading{
+    border-bottom: 4px red solid;
+    width: 85%;
+    margin: 2rem 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.form p{
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.568);
+    margin: 0 1em;
+    margin-bottom: 0.6em;
+}
+.form .un{
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90%;
+    height: 2.5rem;
+    margin: .1em 1em;
+    font-size: 2rem;
+    
+    /* background-color: rgba(0, 0, 0, 0.116); */
+}
+.form label{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0 1em;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: capitalize;
+}
+
+.form .sub{
+    color: rgb(109, 59, 13);
+    background-color: lightgreen;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1%;
+    margin: .4em 0 0 40%;
+    text-transform: uppercase;
+}
+.form .sub:hover{
+    letter-spacing: 5%;
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+}
+.form .sub:visited{
+    text-decoration: line-through;
+    text-transform: capitalize;
+    color: rgb(53, 10, 10);
+    background-color: beige;
+}
+
+.form .msg{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0% 1em;
+    height: 40vh;
+    color: rgb(11, 11, 221);
+
+}
+ .form .fa{
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.575);
+ }
+
+.form p:hover{
+    color: beige;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+/* ################################################# */
+
+
+@media (max-width:500px) {
+    html{ max-height: 95vh;
+        height: 90vh;
+        font-size: 50%;
+        
+    }
+    .navbar h1{
+        text-align: left;
+    }
+    .navbar .logo{ 
+
+        text-align: center;
+        float: none;
+        display: block;
+        width: 100%;
+        
+    }
+    .navbar .ul1{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header .ipl .ipl1{
+        color: gold;
+    }
+    .mangal .don{
+        height: auto;
+        width: 100%;
+    }
+    .mangal1 .img-box,
+    .mangal1 .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mangal2 .img-box,
+    .mangal2 .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
+    .box-1 .b1{
+        float: none;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .box-1 .b2{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+    .box-1 .b3{
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+        float: none;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem
+    }
+    .navbar2 .logo{ 
+
+        text-align: center;
+        float: none;
+        display: block;
+        width: 100%;
+        
+    }
+    .navbar2 .ul1{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+}
+.abtlast .cls1{
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+.abtlast .cls2{
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-top: 5rem;
+}
+.student p{
+    font-size: 1rem;
+}
+.contact-us .form{
+    /* border: 2px dotted rgb(19, 168, 86); */
+    float: none;
+    width: 98%;
+    height: 50%;
+}
+.contact-us .add{
+    width: 97%;
+    float: none;
+    /* border: 2px solid black; */
+}  
+
+}
