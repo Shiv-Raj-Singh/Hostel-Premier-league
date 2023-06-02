@@ -1,0 +1,103 @@
+*{
+    padding:0%;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+ body{
+    background-color: rgba(0, 0, 0, 0.623);
+    min-height: 95vh;
+    min-width: 95vw;
+}
+
+.navbar .container{
+    background-color: rgba(1, 96, 109, 0.171);
+    /* border: 2px solid yellow; */
+    font-size: 1.5rem;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content : space-between ;
+}
+.ul1{
+    font-size: 1rem;
+    /* border: 3px blanchedalmond solid; */
+    list-style-type : none ;
+    width: 40vw;
+    height: auto;
+    display: block;
+    display: flex;
+    justify-content: space-evenly; 
+}
+.logo{
+    color: rgb(238, 229, 229);
+    font-weight: 800;
+    font-style: inherit;
+    margin-left: 3%;
+}
+
+a{
+    color :rgb(253, 243, 243);
+    text-transform: uppercase;
+}
+
+.logo:hover{
+    color: gold;
+    font-weight: 900;
+    font-style: italic;
+    margin-left: 5%;
+}
+
+
+a:hover{
+    color :rgb(247, 9, 9);
+    font-size: 1.1rem;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.login{
+       /* border : 2px black solid ; */
+       padding: 2%;
+       padding-left: 13%;
+       width: 40vw;
+       background: transparent(-50%);
+       background-color: rgba(192, 192, 192, 0.24);
+       /* transform: ; */
+       /* position: absolute; */
+       margin: 10% auto;
+} 
+.login .heading{
+    color: rgb(25, 26, 23);
+    margin: 2% 0;
+    font-size: 200%;
+    margin-bottom: 6%;
+    text-transform: capitalize;
+}
+label{
+    color: rgb(242, 243, 239);
+}
+.un{
+    margin: 1.5% 0;
+}
+.un:focus{
+    height: 4vh;
+    padding: 2%;
+    color: darkblue;
+    background-color: aqua;
+    font-size: 1.3rem;
+}
+
+.sub{
+    padding: 1%;
+    color: gold;
+    text-transform: uppercase;
+    margin: 2% 0 0 17%;
+    background-color: rgb(77, 82, 82);
+}
+.sub:hover{
+    padding: 2%;
+    color: rgb(12, 12, 11);
+    text-transform: uppercase;
+    margin: 2% 0 0 17%;
+    background-color: rgb(233, 245, 245);
+}
